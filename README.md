@@ -35,6 +35,7 @@ Terraform manages the deployment.
 * 1 x CDN distribution
 * 2 X EFS mount target
 * 1 x RDS
+* 2 x ElastiCache (Redis)
 
 **Getting started**
 
@@ -75,6 +76,7 @@ Deploy the code in your AWS account with Terraform
 |-- cdn.tf                  # Cloudfront distribution
 |-- rds.tf                  # MySQL
 |-- efs.tf                  # Share filesystem
+|-- elasticache.tf          # Cache layer
 |-- output.tf               # Output values
 |-- /bootstraping           # Initialization script
 |-- /ansible                # Ansible playbook
